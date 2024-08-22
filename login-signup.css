@@ -1,0 +1,91 @@
+@font-face {
+    font-family: plight;
+    src: url(./fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: preg;
+    src: url(./fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: pmed;
+    src: url(./fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: psbld;
+    src: url(./fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: pbld;
+    src: url(./fonts/Poppins-Bold.ttf);
+}
+
+*{
+    margin: 0 auto;
+}
+
+body{
+    background-color: #000117;
+}
+
+.parent-div{
+    margin-top: 70px;
+    height: 800px;
+    width: 350px;
+}
+
+.parent-div .logo{
+    align-items: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.login-form-parent p{
+    color: white;
+    font-size: 25px;
+    font-family: psbld;
+    margin-bottom: 10px;
+}
+
+.login-form-parent .login-form form input{
+    width: 95%;
+    height: 45px;
+    margin-bottom: 18px;
+    color: white;
+    font-family: plight;
+    font-size: 16px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 0.5px solid white;
+    border-radius: 8px;
+    outline: none;
+}
+
+.login-form-parent .login-form form .login-button button{
+    width: 100%;
+    height: 50px;
+    background-color: #306be1;
+    color: white;
+    font-family: pmed;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+}
+
+.login-form-parent .login-form form .login-button button:hover{
+    background-color: #1957D4;
+}
+
+.login-form form .signup-link p{
+    font-size: 16px;
+    font-family: plight;
+    margin: 20px 0px;
+}
+
+.login-form form .signup-link p a{
+    text-decoration: none;
+    color: aqua;
+    text-decoration: underline;
+}
