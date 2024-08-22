@@ -29,19 +29,19 @@
                 <p>Sign Up</p>
             </div>
             <div class="login-form">
-                <form>
-                    <input type="text" name="" id="" placeholder="Full Name">
-                    <input type="password" name="" id="" placeholder="Contact">
-                    <input type="password" name="" id="" placeholder="Username">
-                    <input type="password" name="" id="" placeholder="Password">
+                <form action="signup.php" method="POST">
+                    <input type="text" name="full_name" id="full_name" placeholder="Full Name" pattern="[A-Za-z\s]+" required>
+                    <input type="tel" name="contact" id="contact" placeholder="Contact" maxlength="10" pattern="[0-9]{10}" required>
+                    <input type="text" name="username" id="username" placeholder="username" required>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                     <div class="login-button">
-                        <button>Create Account</button>
+                        <button type="submit" >Create Account</button>
                     </div>
                     <center class="signup-link"><p>Already have An Account ? <a href="login.html">Log In</a></p></center>
                 </form>
-                <p style="font-family: plight; font-size: 20px; text-align: center; color: grey; margin-bottom: 20px;">---------- or ----------</p>
-                <div id="my-signin2"></div>
-                    <script>
+                <!-- <p style="font-family: plight; font-size: 20px; text-align: center; color: grey; margin-bottom: 20px;">---------- or ----------</p>
+                <div id="my-signin2"></div> -->
+                    <!-- <script>
                         function onSuccess(googleUser) {
                         console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
                         }
@@ -61,7 +61,7 @@
                         }
                     </script>
 
-                    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+                    <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
             </div>
         </div>
     </div>
